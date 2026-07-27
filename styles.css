@@ -1,0 +1,32 @@
+/* libre-franklin-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/libre-franklin-v20-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/libre-franklin-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/libre-franklin-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  ---primary-blue-500: hsl(223, 87%, 63%);
+  --secondary-blue-200: hsl(223, 100%, 88%);
+  --secondary-red-400: hsl(354, 100%, 66%);
+  --neutral-gray-400: hsl(0, 0%, 59%);
+  --neutral-blue-950:hsl(209, 33%, 12%);
+  --body-font-size: calc(20 / 16 * 1rem);
+}/*# sourceMappingURL=styles.css.map */
