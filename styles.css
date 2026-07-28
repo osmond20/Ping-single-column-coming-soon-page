@@ -23,11 +23,12 @@
   src: url("../fonts/libre-franklin-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
-  ---primary-blue-500: hsl(223, 87%, 63%);
+  --primary-blue-500: hsl(223, 87%, 63%);
   --secondary-blue-200: hsl(223, 100%, 88%);
   --secondary-red-400: hsl(354, 100%, 66%);
   --neutral-gray-400: hsl(0, 0%, 59%);
-  --neutral-blue-950:hsl(209, 33%, 12%);
+  --neutral-blue-950: hsl(209, 33%, 12%);
+  --white: hsl(0, 0%, 100%);
   --body-font-size: calc(20 / 16 * 1rem);
 }
 
@@ -71,8 +72,47 @@ ol {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  font-family: "Libre Franklin";
+}
+
+.parent-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 5.9375rem;
+  padding-block-end: 2.1875rem;
+}
+
+.info-message {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  text-align: center;
+  padding-block-end: 13.75rem;
+}
+
+.notify-me-sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.email-input {
+  border: 1px solid var(--neutral-gray-400);
+  width: 21.25rem;
+}
+
+.notify-me-button {
+  background-color: var(--primary-blue-500);
+  color: var(--white);
 }/*# sourceMappingURL=styles.css.map */

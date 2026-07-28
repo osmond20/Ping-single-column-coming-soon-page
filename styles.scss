@@ -24,11 +24,12 @@
 }
 
 :root{
-    ---primary-blue-500: hsl(223, 87%, 63%);
+    --primary-blue-500: hsl(223, 87%, 63%);
     --secondary-blue-200: hsl(223, 100%, 88%);
     --secondary-red-400: hsl(354, 100%, 66%);
     --neutral-gray-400: hsl(0, 0%, 59%);
-    --neutral-blue-950:hsl(209, 33%, 12%);
+    --neutral-blue-950: hsl(209, 33%, 12%);
+    --white: hsl(0, 0%, 100%);
     --body-font-size: calc(20 / 16 * 1rem);
 }
 
@@ -72,8 +73,55 @@ ol {
 body{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  font-family: "Libre Franklin";
 }
+
+.parent-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Logo{
+  display: flex;
+  justify-content: center;
+  padding-block-start: calc(95 / 16 * 1rem);
+  padding-block-end: calc(35 / 16 * 1rem);
+}
+
+.info-message{
+  display: flex;
+  flex-direction: column;
+  gap: calc(18 / 16 * 1rem);
+  text-align: center;
+  padding-block-end: calc(220 / 16 * 1rem);
+}
+
+.notify-me-sign-up-form{
+  display: flex;
+  flex-direction: column;
+  gap: calc(10 / 16 * 1rem);
+}
+
+.email-input{
+  border: 1px solid var(--neutral-gray-400);
+  width: calc(340 / 16 *
+  1rem);
+}
+
+.notify-me-button{
+  background-color: var(--primary-blue-500);
+  color: var(--white);
+}
+
+
+
+
+
+
+
