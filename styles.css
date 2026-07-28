@@ -98,7 +98,11 @@ body {
   flex-direction: column;
   gap: 1.125rem;
   text-align: center;
-  padding-block-end: 13.75rem;
+  padding-block-end: 2.1875rem;
+}
+
+.notify-me-section {
+  padding-block-end: 6.25rem;
 }
 
 .notify-me-sign-up-form {

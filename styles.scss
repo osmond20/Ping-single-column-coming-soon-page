@@ -99,7 +99,11 @@ body{
   flex-direction: column;
   gap: calc(18 / 16 * 1rem);
   text-align: center;
-  padding-block-end: calc(220 / 16 * 1rem);
+  padding-block-end: calc(35 / 16 * 1rem);
+}
+
+.notify-me-section{
+  padding-block-end: calc(100 / 16 * 1rem);
 }
 
 .notify-me-sign-up-form{
