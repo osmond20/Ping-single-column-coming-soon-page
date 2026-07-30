@@ -218,4 +218,53 @@ body {
 .copy-right {
   font-size: 0.75rem;
   color: var(--neutral-gray-400);
+}
+
+@media (min-width: 40rem) {
+  .Logo {
+    width: 100%;
+    height: 7.5rem;
+    padding-block-start: 5.3125rem;
+  }
+  .ping-Logo {
+    height: 1.6875rem;
+    width: 5.9375rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .paragraph {
+    font-size: 1.25rem;
+  }
+  .notify-me-section {
+    padding-block-start: 1.25rem;
+  }
+  .notify-me-sign-up-form {
+    flex-direction: row;
+  }
+  .email-input {
+    height: 3.4375rem;
+    width: 26.25rem;
+    border-radius: 2.1875rem;
+  }
+  .notify-me-button {
+    height: 3.4375rem;
+    width: 12.5rem;
+    border-radius: 2.1875rem;
+    margin-inline-start: 0.9375rem;
+  }
+  .image-container {
+    padding-block-start: 5rem;
+  }
+  .image {
+    height: 25rem;
+    width: 40rem;
+  }
+  .footer-container {
+    align-items: start;
+    padding-block-start: 4.375rem;
+  }
+  .icons-container {
+    gap: 1.375rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

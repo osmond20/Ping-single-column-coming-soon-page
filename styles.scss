@@ -225,7 +225,62 @@ body{
 }
 
 @media(min-width:40rem){
-  
+  .Logo{
+    width: 100%;
+    height: calc(120 / 16 * 1rem);
+    padding-block-start: calc(85 / 16 * 1rem);
+  }
+
+ .ping-Logo{
+  height: calc(27 / 16 * 1rem);
+  width: calc(95 / 16 * 1rem);
+ }
+
+ .title{
+  font-size: calc(48 / 16 * 1rem);
+ }
+
+ .paragraph{
+  font-size: calc(20 / 16 * 1rem);
+ }
+
+ .notify-me-section{
+  padding-block-start: calc(20 / 16 * 1rem);
+ }
+
+  .notify-me-sign-up-form{
+  flex-direction: row;
+ }
+ .email-input{
+  height: calc(55 / 16 * 1rem);
+  width: calc(420 / 16 * 1rem);
+  border-radius: calc(35 / 16 * 1rem);
+ }
+
+ .notify-me-button{
+   height: calc(55 / 16 * 1rem);
+    width: calc(200 / 16 * 1rem);
+    border-radius: calc(35 / 16 * 1rem);
+    margin-inline-start: calc(15 / 16 * 1rem);
+ }
+
+ .image-container{
+  padding-block-start: calc(80 / 16 * 1rem);
+ }
+
+ .image{
+  height: calc(400 / 16 * 1rem);
+  width: calc(640 / 16 * 1rem);
+ }
+
+ .footer-container{
+  align-items: start;
+  padding-block-start: calc(70 / 16 * 1rem);
+ }
+
+ .icons-container{
+  gap: calc(22 / 16 * 1rem);
+ }
 }
 
 
