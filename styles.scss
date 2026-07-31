@@ -91,16 +91,16 @@ body{
 .Logo{
   display: flex;
   justify-content: center;
-  padding-block-start: calc(95 / 16 * 1rem);
+  padding-block-start: calc(105 / 16 * 1rem);
 }
 
 .info-message{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: calc(20 / 16 * 1rem);
+  gap: calc(24 / 16 * 1rem);
   text-align: center;
-  padding-block-start: calc(42 / 16 * 1rem);
+  padding-block-start: calc(50 / 16 * 1rem);
   padding-block-end: calc(20 / 16 * 1rem);
 }
 
@@ -116,11 +116,11 @@ body{
 }
 
 .paragraph{
-  font-size: calc(14 / 16 * 1rem);
+  font-size: calc(15 / 16 * 1rem);
 }
 
 .notify-me-section{
-  padding-block-start: calc(15 / 16 * 1rem);
+  padding-block-start: calc(17 / 16 * 1rem);
   display: flex;
   justify-content: center;
 }
@@ -128,24 +128,35 @@ body{
 .notify-me-sign-up-form{
   display: flex;
   flex-direction: column;
-  gap: calc(10 / 16 * 1rem);
+  gap: calc(30 / 16 * 1rem);
 }
 
 .email-input{
   border: 1px solid var(--neutral-gray-400);
-  height: calc(45 / 16 * 1rem);
-  width: calc(310 / 16 * 1rem);
+  height: calc(50 / 16 * 1rem);
+  width: calc(335 / 16 * 1rem);
   border: 1px solid var(--neutral-gray-400);
   border-radius: calc(25 / 16 * 1rem);
   padding-inline-start: calc(35 / 16 * 1rem);
   font-size: calc(13.5 / 16 * 1rem);
 }
 
+  .email-input.error {
+    border: 2px solid var(--secondary-red-400);
+  }
+  .error-message {
+    padding-block-start: calc(5 / 16 * 1rem);
+    color: var(--secondary-red-400);
+    font-style: italic;
+    font-size: calc(13 / 16 * 1rem);
+    text-align: center;
+  }
+
 .notify-me-button{
   background-color: var(--primary-blue-500);
   color: var(--white);
-  height: calc(45 / 16 * 1rem);
-  width: calc(310 / 16 * 1rem);
+  height: calc(47 / 16 * 1rem);
+  width: calc(335 / 16 * 1rem);
   border: none;
   border-radius: calc(25 / 16 * 1rem);
   font-size: calc(14.5 / 16 * 1rem);
@@ -159,12 +170,12 @@ body{
 }
 
 .image-container{
-  padding-block-start: calc(75 / 16 * 1rem);
+  padding-block-start: calc(45 / 16 * 1rem);
 }
 
 .image{
-  height: calc(215 / 16 * 1rem);
-  width: calc(350 / 16 * 1rem);
+  height: calc(235 / 16 * 1rem);
+  width: calc(380 / 16 * 1rem);
 }
 
 .footer-container{
@@ -174,12 +185,12 @@ body{
 }
 
 .icons-container{
-  //padding-block-start: calc(130 / 16 * 1rem);
+  padding-block-start: calc(50 / 16 * 1rem);
  // padding-block-end: calc(100 / 16 8 1rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: calc(30 / 16 * 1rem);
+  gap: calc(35 / 16 * 1rem);
 
 }
 
@@ -236,6 +247,11 @@ body{
   width: calc(95 / 16 * 1rem);
  }
 
+ .info-message{
+  padding-block-start: calc(40 / 16 * 1rem);
+  gap: calc(20 / 16 * 1rem);
+ }
+
  .title{
   font-size: calc(48 / 16 * 1rem);
  }
@@ -257,11 +273,11 @@ body{
   border-radius: calc(35 / 16 * 1rem);
  }
 
+
  .notify-me-button{
    height: calc(55 / 16 * 1rem);
     width: calc(200 / 16 * 1rem);
     border-radius: calc(35 / 16 * 1rem);
-    margin-inline-start: calc(15 / 16 * 1rem);
  }
 
  .image-container{
@@ -275,7 +291,7 @@ body{
 
  .footer-container{
   align-items: start;
-  padding-block-start: calc(70 / 16 * 1rem);
+  padding-block-start: calc(15 / 16 * 1rem);
  }
 
  .icons-container{

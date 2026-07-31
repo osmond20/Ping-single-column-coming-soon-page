@@ -90,16 +90,16 @@ body {
 .Logo {
   display: flex;
   justify-content: center;
-  padding-block-start: 5.9375rem;
+  padding-block-start: 6.5625rem;
 }
 
 .info-message {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
   text-align: center;
-  padding-block-start: 2.625rem;
+  padding-block-start: 3.125rem;
   padding-block-end: 1.25rem;
 }
 
@@ -115,11 +115,11 @@ body {
 }
 
 .paragraph {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 .notify-me-section {
-  padding-block-start: 0.9375rem;
+  padding-block-start: 1.0625rem;
   display: flex;
   justify-content: center;
 }
@@ -127,24 +127,36 @@ body {
 .notify-me-sign-up-form {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 1.875rem;
 }
 
 .email-input {
   border: 1px solid var(--neutral-gray-400);
-  height: 2.8125rem;
-  width: 19.375rem;
+  height: 3.125rem;
+  width: 20.9375rem;
   border: 1px solid var(--neutral-gray-400);
   border-radius: 1.5625rem;
   padding-inline-start: 2.1875rem;
   font-size: 0.84375rem;
 }
 
+.email-input.error {
+  border: 2px solid var(--secondary-red-400);
+}
+
+.error-message {
+  padding-block-start: 0.3125rem;
+  color: var(--secondary-red-400);
+  font-style: italic;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
 .notify-me-button {
   background-color: var(--primary-blue-500);
   color: var(--white);
-  height: 2.8125rem;
-  width: 19.375rem;
+  height: 2.9375rem;
+  width: 20.9375rem;
   border: none;
   border-radius: 1.5625rem;
   font-size: 0.90625rem;
@@ -158,12 +170,12 @@ body {
 }
 
 .image-container {
-  padding-block-start: 4.6875rem;
+  padding-block-start: 2.8125rem;
 }
 
 .image {
-  height: 13.4375rem;
-  width: 21.875rem;
+  height: 14.6875rem;
+  width: 23.75rem;
 }
 
 .footer-container {
@@ -173,10 +185,11 @@ body {
 }
 
 .icons-container {
+  padding-block-start: 3.125rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.875rem;
+  gap: 2.1875rem;
 }
 
 .icons {
@@ -230,6 +243,10 @@ body {
     height: 1.6875rem;
     width: 5.9375rem;
   }
+  .info-message {
+    padding-block-start: 2.5rem;
+    gap: 1.25rem;
+  }
   .title {
     font-size: 3rem;
   }
@@ -251,7 +268,6 @@ body {
     height: 3.4375rem;
     width: 12.5rem;
     border-radius: 2.1875rem;
-    margin-inline-start: 0.9375rem;
   }
   .image-container {
     padding-block-start: 5rem;
@@ -262,7 +278,7 @@ body {
   }
   .footer-container {
     align-items: start;
-    padding-block-start: 4.375rem;
+    padding-block-start: 0.9375rem;
   }
   .icons-container {
     gap: 1.375rem;

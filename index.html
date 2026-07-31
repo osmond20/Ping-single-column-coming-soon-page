@@ -19,8 +19,11 @@
     </section>
     <section class="notify-me-section">
       <form class="notify-me-sign-up-form" novalidate>
-        <input class="email-input" type="email" placeholder="Your email address" name="email" autocomplete="email">
-        <button class="notify-me-button" type="button">Notify Me</button>
+        <div class="email-input-container">
+          <input class="email-input" type="email" placeholder="Your email address" name="email" autocomplete="email">
+          <p class="error-message"></p>
+        </div>
+        <button class="notify-me-button" type="submit">Notify Me</button>
       </form>
     </section>
     <div class="image-container">
