@@ -99,12 +99,12 @@ body {
   justify-content: center;
   gap: 1.5rem;
   text-align: center;
-  padding-block-start: 3.125rem;
+  padding-block-start: clamp(3.125rem, 13.672vw - 1.25rem, 7.5rem);
   padding-block-end: 1.25rem;
 }
 
 .title {
-  font-size: 1.59375rem;
+  font-size: clamp(1.59375rem, 4.395vw + 0.188rem, 3rem);
   font-weight: 300;
   color: var(--neutral-gray-400);
 }
@@ -115,7 +115,7 @@ body {
 }
 
 .paragraph {
-  font-size: 0.9375rem;
+  font-size: clamp(0.9375rem, 0.977vw + 0.625rem, 1.25rem);
 }
 
 .notify-me-section {
@@ -127,13 +127,14 @@ body {
 .notify-me-sign-up-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.875rem;
 }
 
 .email-input {
   border: 1px solid var(--neutral-gray-400);
   height: 3.125rem;
-  width: 20.9375rem;
+  width: clamp(17.81rem, 26vw + 9.49rem, 20.93rem);
   border: 1px solid var(--neutral-gray-400);
   border-radius: 1.5625rem;
   padding-inline-start: 2.1875rem;
@@ -156,7 +157,7 @@ body {
   background-color: var(--primary-blue-500);
   color: var(--white);
   height: 2.9375rem;
-  width: 20.9375rem;
+  width: clamp(17.81rem, 26vw + 9.49rem, 20.93rem);
   border: none;
   border-radius: 1.5625rem;
   font-size: 0.90625rem;
@@ -174,8 +175,8 @@ body {
 }
 
 .image {
-  height: 14.6875rem;
-  width: 23.75rem;
+  height: clamp(12.5rem, 36.458vw + 0.833rem, 14.6875rem);
+  width: clamp(19rem, 48.833vw + 2.373rem, 23.75rem);
 }
 
 .footer-container {
@@ -244,14 +245,7 @@ body {
     width: 5.9375rem;
   }
   .info-message {
-    padding-block-start: 2.5rem;
     gap: 1.25rem;
-  }
-  .title {
-    font-size: 3rem;
-  }
-  .paragraph {
-    font-size: 1.25rem;
   }
   .notify-me-section {
     padding-block-start: 1.25rem;
@@ -268,6 +262,7 @@ body {
     height: 3.4375rem;
     width: 12.5rem;
     border-radius: 2.1875rem;
+    margin-block-end: 0.3125rem;
   }
   .image-container {
     padding-block-start: 5rem;

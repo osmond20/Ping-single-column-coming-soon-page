@@ -100,12 +100,12 @@ body{
   justify-content: center;
   gap: calc(24 / 16 * 1rem);
   text-align: center;
-  padding-block-start: calc(50 / 16 * 1rem);
+  padding-block-start: clamp(3.125rem, 13.672vw + -1.25rem, 7.5rem);
   padding-block-end: calc(20 / 16 * 1rem);
 }
 
 .title{
-  font-size: calc(25.5 / 16 * 1rem);
+  font-size: clamp(1.59375rem, 4.395vw + 0.188rem, 3rem);
   font-weight: 300;
   color: var(--neutral-gray-400)
 }
@@ -116,7 +116,7 @@ body{
 }
 
 .paragraph{
-  font-size: calc(15 / 16 * 1rem);
+  font-size: clamp(0.9375rem, 0.977vw + 0.625rem, 1.25rem);
 }
 
 .notify-me-section{
@@ -128,13 +128,14 @@ body{
 .notify-me-sign-up-form{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: calc(30 / 16 * 1rem);
 }
 
 .email-input{
   border: 1px solid var(--neutral-gray-400);
   height: calc(50 / 16 * 1rem);
-  width: calc(335 / 16 * 1rem);
+  width: clamp(17.81rem, 26vw + 9.49rem, 20.93rem);
   border: 1px solid var(--neutral-gray-400);
   border-radius: calc(25 / 16 * 1rem);
   padding-inline-start: calc(35 / 16 * 1rem);
@@ -156,7 +157,7 @@ body{
   background-color: var(--primary-blue-500);
   color: var(--white);
   height: calc(47 / 16 * 1rem);
-  width: calc(335 / 16 * 1rem);
+  width: clamp(17.81rem, 26vw + 9.49rem, 20.93rem);
   border: none;
   border-radius: calc(25 / 16 * 1rem);
   font-size: calc(14.5 / 16 * 1rem);
@@ -173,9 +174,10 @@ body{
   padding-block-start: calc(45 / 16 * 1rem);
 }
 
+// scales for smaller phones like IPhone SE and Z fold
 .image{
-  height: calc(235 / 16 * 1rem);
-  width: calc(380 / 16 * 1rem);
+  height: clamp(12.5rem, 36.458vw + 0.833rem, 14.6875rem);
+  width: clamp(19rem, 48.833vw + 2.373rem, 23.75rem);
 }
 
 .footer-container{
@@ -186,7 +188,6 @@ body{
 
 .icons-container{
   padding-block-start: calc(50 / 16 * 1rem);
- // padding-block-end: calc(100 / 16 8 1rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,16 +249,7 @@ body{
  }
 
  .info-message{
-  padding-block-start: calc(40 / 16 * 1rem);
   gap: calc(20 / 16 * 1rem);
- }
-
- .title{
-  font-size: calc(48 / 16 * 1rem);
- }
-
- .paragraph{
-  font-size: calc(20 / 16 * 1rem);
  }
 
  .notify-me-section{
@@ -273,11 +265,11 @@ body{
   border-radius: calc(35 / 16 * 1rem);
  }
 
-
  .notify-me-button{
-   height: calc(55 / 16 * 1rem);
-    width: calc(200 / 16 * 1rem);
-    border-radius: calc(35 / 16 * 1rem);
+  height: calc(55 / 16 * 1rem);
+  width: calc(200 / 16 * 1rem);
+  border-radius: calc(35 / 16 * 1rem);
+  margin-block-end: calc(5 / 16 * 1rem);
  }
 
  .image-container{
