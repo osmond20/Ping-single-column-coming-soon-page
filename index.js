@@ -15,6 +15,10 @@ form.addEventListener("submit", event =>{
     if(!validateInput(input.value)){
         input.classList.toggle("error");
         errorMessage.classList.toggle("show");
-        event.preventDefault();
-    } 
+    }
+    else if(input.value == ""){
+        errorMessage.textContent = "Whoops! It looks like you forgot to add your email"
+    }
+
+    event.preventDefault();
 });

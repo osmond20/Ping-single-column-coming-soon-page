@@ -99,7 +99,7 @@ body {
   justify-content: center;
   gap: 1.5rem;
   text-align: center;
-  padding-block-start: clamp(3.125rem, 13.672vw - 1.25rem, 7.5rem);
+  padding-block-start: 3.25rem;
   padding-block-end: 1.25rem;
 }
 
@@ -116,7 +116,7 @@ body {
 
 .paragraph {
   padding-block-start: 0.625rem;
-  font-size: clamp(0.9375rem, 0.977vw + 0.625rem, 1.25rem);
+  font-size: clamp(0.9375rem, 0.977vw + 0.625rem, 2.5rem);
 }
 
 .notify-me-section {
@@ -253,9 +253,13 @@ body {
   }
   .info-message {
     gap: 1.25rem;
+    padding-block-start: 2.5rem;
+  }
+  .paragraph {
+    padding-block-start: 0;
   }
   .notify-me-section {
-    padding-block-start: 1.25rem;
+    padding-block-start: 0.0625rem;
   }
   .notify-me-sign-up-form {
     flex-direction: row;
@@ -289,7 +293,7 @@ body {
     margin-block-end: 0.3125rem;
   }
   .image-container {
-    padding-block-start: 5rem;
+    padding-block-start: 3.75rem;
   }
   .image {
     height: 25rem;

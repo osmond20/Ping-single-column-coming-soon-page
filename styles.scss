@@ -100,7 +100,7 @@ body{
   justify-content: center;
   gap: calc(24 / 16 * 1rem);
   text-align: center;
-  padding-block-start: clamp(3.125rem, 13.672vw + -1.25rem, 7.5rem);
+  padding-block-start: 3.25rem;
   padding-block-end: calc(20 / 16 * 1rem);
 }
 
@@ -117,7 +117,7 @@ body{
 
 .paragraph{
   padding-block-start: calc(10 / 16 * 1rem);
-  font-size: clamp(0.9375rem, 0.977vw + 0.625rem, 1.25rem);
+  font-size: clamp(0.9375rem, 0.977vw + 0.625rem, 2.5rem);
 }
 
 .notify-me-section{
@@ -258,10 +258,15 @@ body{
 
  .info-message{
   gap: calc(20 / 16 * 1rem);
+  padding-block-start: calc(40 / 16 * 1rem);
+ }
+
+ .paragraph{
+  padding-block-start: 0;
  }
 
  .notify-me-section{
-  padding-block-start: calc(20 / 16 * 1rem);
+  padding-block-start: calc(1 / 16 * 1rem);
  }
 
   .notify-me-sign-up-form{
@@ -301,7 +306,7 @@ body{
  }
 
  .image-container{
-  padding-block-start: calc(80 / 16 * 1rem);
+  padding-block-start: calc(60 / 16 * 1rem);
  }
 
  .image{
