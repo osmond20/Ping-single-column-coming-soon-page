@@ -14,7 +14,7 @@ function validateInput(email){
 form.addEventListener("submit", event =>{
     event.preventDefault();
 
-    email = input.value.trim();
+    const email = input.value.trim();
 
     if(email === ""){
         input.classList.add("error");
