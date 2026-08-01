@@ -5,8 +5,8 @@ const errorMessage = document.querySelector(".error-message");
 
 // function to validate the email using basic email format
 function validateInput(email){
-    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    let result = regex.test(email);
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const result = regex.test(email);
     return result;
 };
 
