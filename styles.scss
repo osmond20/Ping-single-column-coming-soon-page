@@ -116,6 +116,7 @@ body{
 }
 
 .paragraph{
+  padding-block-start: calc(10 / 16 * 1rem);
   font-size: clamp(0.9375rem, 0.977vw + 0.625rem, 1.25rem);
 }
 
@@ -145,12 +146,19 @@ body{
   .email-input.error {
     border: 2px solid var(--secondary-red-400);
   }
+
   .error-message {
     padding-block-start: calc(5 / 16 * 1rem);
     color: var(--secondary-red-400);
     font-style: italic;
     font-size: calc(13 / 16 * 1rem);
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .error-message.show{
+    opacity: 1;
   }
 
 .notify-me-button{
@@ -258,11 +266,31 @@ body{
 
   .notify-me-sign-up-form{
   flex-direction: row;
+  height: calc(100 / 16 *1rem);
  }
+
+ .email-input-container{
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .error-message{
+  position: absolute;
+  inset-inline: 0;
+  bottom: calc(.25rem);
+  padding-block-start: 0;
+  text-align: center;
+  z-index: 2;
+}
+
  .email-input{
   height: calc(55 / 16 * 1rem);
   width: calc(420 / 16 * 1rem);
   border-radius: calc(35 / 16 * 1rem);
+   margin-block-end: calc(5 / 16 * 1rem);
  }
 
  .notify-me-button{

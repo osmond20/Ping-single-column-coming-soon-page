@@ -115,6 +115,7 @@ body {
 }
 
 .paragraph {
+  padding-block-start: 0.625rem;
   font-size: clamp(0.9375rem, 0.977vw + 0.625rem, 1.25rem);
 }
 
@@ -151,6 +152,12 @@ body {
   font-style: italic;
   font-size: 0.8125rem;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.error-message.show {
+  opacity: 1;
 }
 
 .notify-me-button {
@@ -252,11 +259,28 @@ body {
   }
   .notify-me-sign-up-form {
     flex-direction: row;
+    height: 6.25rem;
+  }
+  .email-input-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .error-message {
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0.25rem;
+    padding-block-start: 0;
+    text-align: center;
+    z-index: 2;
   }
   .email-input {
     height: 3.4375rem;
     width: 26.25rem;
     border-radius: 2.1875rem;
+    margin-block-end: 0.3125rem;
   }
   .notify-me-button {
     height: 3.4375rem;

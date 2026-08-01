@@ -14,7 +14,7 @@ function validateInput(email){
 form.addEventListener("submit", event =>{
     if(!validateInput(input.value)){
         input.classList.toggle("error");
-        errorMessage.textContent = "Please provide a valid email address";
+        errorMessage.classList.toggle("show");
         event.preventDefault();
     } 
 });
