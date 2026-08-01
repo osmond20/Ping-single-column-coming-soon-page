@@ -12,13 +12,24 @@ function validateInput(email){
 
 // Submission functionality
 form.addEventListener("submit", event =>{
-    if(!validateInput(input.value)){
-        input.classList.toggle("error");
-        errorMessage.classList.toggle("show");
-    }
-    else if(input.value == ""){
-        errorMessage.textContent = "Whoops! It looks like you forgot to add your email"
+    event.preventDefault();
+
+    email = input.value.trim();
+
+    if(email === ""){
+        input.classList.add("error");
+        errorMessage.textContent = "Whoops! It looks like you forgot to add your email";
+        input.classList.add("show");
+        return;
     }
 
-    event.preventDefault();
+    if(!validateInput(email)){
+        input.classList.add("error");
+        errorMessage.textContent = "Please provide a valid email address";
+        input.classList.add("show");
+    }
+
+    input.classList.remove("error");
+    errorMessage.textContent = "";
+    input.classList.remove("show");
 });
