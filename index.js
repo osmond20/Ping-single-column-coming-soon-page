@@ -3,7 +3,7 @@ const form = document.querySelector(".notify-me-sign-up-form");
 const input = document.querySelector(".email-input");
 const errorMessage = document.querySelector(".error-message");
 
-// function to validate the email
+// function to validate the email using basic email format
 function validateInput(email){
     let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     let result = regex.test(email);
