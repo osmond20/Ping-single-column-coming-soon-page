@@ -5,17 +5,16 @@ const errorMessage = document.querySelector(".error-message");
 
 // function to validate the email
 function validateInput(email){
-
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    let result = regex.test(email);
+    return result;
 };
 
 // Submission functionality
 form.addEventListener("submit", event =>{
-
-    input.classList.toggle("error");
-
-
-
-
-    errorMessage.textContent = "Please provide a valid email address"
-    event.preventDefault();
+    if(!validateInput(input.value)){
+        input.classList.toggle("error");
+        errorMessage.textContent = "Please provide a valid email address";
+        event.preventDefault();
+    } 
 });
