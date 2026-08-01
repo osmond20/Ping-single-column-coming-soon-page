@@ -19,17 +19,18 @@ form.addEventListener("submit", event =>{
     if(email === ""){
         input.classList.add("error");
         errorMessage.textContent = "Whoops! It looks like you forgot to add your email";
-        input.classList.add("show");
+        errorMessage.classList.add("show");
         return;
     }
 
     if(!validateInput(email)){
         input.classList.add("error");
         errorMessage.textContent = "Please provide a valid email address";
-        input.classList.add("show");
+        errorMessage.classList.add("show");
+        return;
     }
 
     input.classList.remove("error");
     errorMessage.textContent = "";
-    input.classList.remove("show");
+    errorMessage.classList.remove("show");
 });
